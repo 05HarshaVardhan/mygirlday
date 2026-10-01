@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+  <title>Happy My Girl Day, Tanu 💕</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Background Canvas for Particles -->
+  <canvas id="particles-canvas"></canvas>
+  
+  <div class="app-container">
+    
+    <!-- Screen 1: Welcome -->
+    <section id="screen-welcome" class="screen active">
+      <div class="content glass">
+        <h1 id="welcome-title">Happy My Girl Day,<br>Tanu 💕</h1>
+        <p id="welcome-subtitle">1st October</p>
+        <button id="btn-open-story" class="btn primary">Open our story ✨</button>
+      </div>
+    </section>
+
+    <!-- Screen 2: Storybook -->
+    <section id="screen-storybook" class="screen">
+      <div class="story-container">
+        <div id="story-page-content" class="glass story-card">
+           <div class="story-img-container">
+             <img id="story-img" src="" alt="Story illustration">
+           </div>
+           <h2 id="story-heading"></h2>
+           <p id="story-text"></p>
+        </div>
+        
+        <div class="story-controls">
+           <button id="btn-prev-page" class="nav-btn hidden" aria-label="Previous page">
+             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+           </button>
+           <div id="story-progress" class="progress-dots"></div>
+           <button id="btn-next-page" class="nav-btn" aria-label="Next page">
+             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+           </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screen 3: Sorry Note -->
+    <section id="screen-sorry-note" class="screen">
+      <div class="note-container glass">
+        <div id="note-lines" class="handwritten-note"></div>
+        <button id="btn-i-love-you" class="btn primary pulse-btn hidden">I love you ❤️</button>
+      </div>
+    </section>
+
+    <!-- Screen 4: Final Photo Reveal -->
+    <section id="screen-photo-reveal" class="screen">
+      <div class="reveal-container glass">
+        <div class="photo-frame">
+          <img id="reveal-photo" src="pics/ghibli/final_photo.jpg" alt="Us" class="romantic-photo">
+        </div>
+        <button id="btn-whats-next" class="btn secondary hidden" style="margin-top: 24px;">What's next? ✨</button>
+      </div>
+    </section>
+
+    <!-- Screen 5: The Question -->
+    <section id="screen-question" class="screen">
+      <div class="question-container glass">
+        <h2>Will you watch "Me Before You" with me? 🎬</h2>
+        <p class="question-sub">I promise I won't fall asleep this time!</p>
+        <div class="answer-buttons">
+          <button id="btn-yes" class="btn yes-btn">Yes! 💖</button>
+          <div class="no-btn-wrapper">
+             <button id="btn-no" class="btn no-btn">No</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screen 6: Yes Result -->
+    <section id="screen-yes" class="screen">
+      <div class="yes-container glass">
+        <h1 class="success-message">It's a date, Chutku pack! 💖</h1>
+        <p>I can't wait to spend time with you.</p>
+        <p class="small-note">(Let's decide on the time soon!)</p>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
